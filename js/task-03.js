@@ -13,7 +13,7 @@ const images = [
   },
 ];
  const itemGallery = images.map((elem) => `<li class = 'item'><img src = ${elem.url} alt = ${elem.alt} width = 350px
-  height = 250px></li>`);
+  height = 250px></li>`).join('');
 
   
 document.querySelector('.gallery').insertAdjacentHTML("beforeend" , itemGallery);

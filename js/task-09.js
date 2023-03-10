@@ -1,5 +1,6 @@
 const btnChage = document.querySelector('.change-color');
 const body = document.querySelector('body');
+const span = document.querySelector('.color')
 btnChage.addEventListener('click', getRandomHexColor);
 
 function getRandomHexColor() {
@@ -8,4 +9,5 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
   body.style.backgroundColor = gg;
+  span.textContent = gg;
 }
